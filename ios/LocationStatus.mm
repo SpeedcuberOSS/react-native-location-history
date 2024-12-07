@@ -1,18 +1,16 @@
 #import "LocationStatus.h"
+#import <React/RCTLog.h>
 
 @implementation LocationStatus
 RCT_EXPORT_MODULE()
 
 // Example method
-// See // https://reactnative.dev/docs/native-modules-ios
-RCT_EXPORT_METHOD(multiply:(double)a
-                  b:(double)b
-                  resolve:(RCTPromiseResolveBlock)resolve
+// See // https://reactnative.dev/docs/legacy/native-modules-ios
+RCT_EXPORT_METHOD(isLocationEnabled:(RCTPromiseResolveBlock)resolve
                   reject:(RCTPromiseRejectBlock)reject)
 {
-    NSNumber *result = @(a * b);
-
-    resolve(result);
+    RCTLogInfo(@"Invoking isLocationStatus from Objective-C");
+    resolve(@NO);  // UNSUPPORTED: I haven't added iOS support yet.
 }
 
 // Don't compile this code when we build for the old architecture.

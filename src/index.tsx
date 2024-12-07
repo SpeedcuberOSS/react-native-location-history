@@ -24,6 +24,7 @@ const LocationStatus = LocationStatusModule
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return LocationStatus.multiply(a, b);
+export function isLocationEnabled(): Promise<boolean> {
+  console.debug('Invoking isLocationEnabled from JS');
+  return LocationStatus.isLocationEnabled();
 }

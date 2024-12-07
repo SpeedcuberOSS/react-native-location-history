@@ -12,12 +12,15 @@ npm install react-native-location-status
 
 
 ```js
-import { multiply } from 'react-native-location-status';
+import { isLocationEnabled } from 'react-native-location-status';
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await isLocationEnabled(); // `true` or `false` (Android only)
 ```
+
+<sub>NOTE: iOS is not supported. Calling `isLocationEnabled()` on iOS will
+always return `false`.</sub>
 
 
 ## Contributing
@@ -26,7 +29,7 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 
 ## License
 
-MIT
+MPL-2.0
 
 ---
 

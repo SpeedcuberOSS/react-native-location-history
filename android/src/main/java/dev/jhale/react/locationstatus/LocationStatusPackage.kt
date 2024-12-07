@@ -1,4 +1,4 @@
-package com.locationstatus
+package dev.jhale.react.locationstatus
 
 import com.facebook.react.TurboReactPackage
 import com.facebook.react.bridge.ReactApplicationContext
