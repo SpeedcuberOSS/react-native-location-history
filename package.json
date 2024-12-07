@@ -55,7 +55,7 @@
     "url": "git+https://github.com/SpeedcuberOSS/react-native-location-status.git"
   },
   "author": "Joseph Hale <me@jhale.dev> (https://github.com/thehale)",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "bugs": {
     "url": "https://github.com/SpeedcuberOSS/react-native-location-status/issues"
   },
